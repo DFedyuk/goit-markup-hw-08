@@ -1,7 +1,30 @@
 .container {
     margin: 0 auto;
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     /* outline: 1px solid orange; */
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+    }
+
 }
+
+
+
+
+// .container {
+//     margin: 0 auto;
+//     width: 1200px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     /* outline: 1px solid orange; */
+// }
